@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <style type="text/css" media="screen">
+            body { padding:1em; margin:auto; max-width:62em; font-family: serif; }
+            h1, h2, h3, h4 { font-family: sans-serif; }
+            img { max-width:100%; }
+            blockquote { border-left:5px solid #dddddd; padding-left:10px; margin-top:30px; margin-bottom:30px; }
+            #header-top { text-align:center; }
+            #header-top h2 { color:#787878; }
+            #header-top img { position: absolute; top: 0; right: 0; border: 0; }
+            #cartoon { text-align:center; margin:50px 0; }
+            #cartoon img { border:3px solid #555555; border-radius:6px; }
+            #version { font-size:x-small; font-family:monospace,monospace; color:#333333; }
+        </style>
+        <title>Web Development Manifesto</title>
+    </head>
+    <body>
+        <header>
+            <div id="header-top">
+                <a href="https://github.com/unixsheikh/webdevelopmentmanifesto.com"><img src="/github-fork-me.webp" alt="Fork me on GitHub"></a>
+                <h1>Web Development Manifesto</h1>
+                <h2>~ for a more sane web ~</h2>
+                <p id="version">Version: 1.0.0. Last updated: 2022-03-14</p>
+            </div>
+        </header>
+        <div id="cartoon">
+            <img id="deviant" src="/deviant-code-1000px-en.webp" alt="cartoon">
+        </div>
+
+        <h2 id="introduction">Introduction</h2>
+        <p>Complexity is the source of bloated, hard to use, error prone, and inconsistent software. With complex code and complex solutions, problems are solved in suboptimal ways, valuable resources are endlessly tied up or wasted, performance slows to a halt, and vulnerabilities become commonplace.</p>
+        <p>For the past two or three decades the main solution to complex, bloated and slow software has been to simply throw more hardware at the problem. This is no longer acceptable because it is not sustainable.</p>
+        <p>Furthermore, software developers need to take responsibility for the work they do. Software development is a craft and making good software requires both skill and patience. Following hype and trends simply cannot do. If you're a software developer you need to take pride in the work you do, you cannot do that if you know that the product you create is slow, bloated and unnecessarily complex.</p>
+        <blockquote>We used to sit around in the Unix Room saying, 'What can we throw out? Why is there this option?' It's often because there is some deficiency in the basic design — you didn't really hit the right design point. Instead of adding an option, think about what was forcing you to add that option.<br><br>― <a href="https://en.wikipedia.org/wiki/Douglas_McIlroy">Doug McIlroy</a></blockquote>
+        <p>Designing simple and elegant software is far more difficult than letting ad-hoc or over-ambitious features obscure the code over time. However one has to pay this price to achieve reliability and maintainability. Furthermore, minimalism results in reasonable, secure and attainable goals. In software simplicity is a virtue that can neither be overstated in importance, nor substituted by anything else.</p>
+        <blockquote>The crucial behaviour we call "security" really just means the software performs the intended goal only, and cannot be convinced to perform additional unintended behaviours. If you don't know precisely what you putting into the mixing bowl and why you shouldn't be making a cake, get a job in sales or something and save us all the grief. Or go ahead, use a bunch of draino and some matchheads, but don't share it.<br><br>― <a href="https://en.wikipedia.org/wiki/Theo_de_Raadt">Theo de Raadt</a></blockquote>
+        <p>Simplicity is the heart of the Unix philosophy. The more code lines you have removed, the more progress you have made. As the number of lines of code in your software shrinks, the more skilled you have become and the less your software sucks.</p>
+        <p>With the "Web Development Manifesto" we strive to maintain minimalism and clarity to drive web development to a completion that result in a much more sane <a href="https://en.wikipedia.org/wiki/World_Wide_Web">World Wide Web</a>.</p>
+
+        <h2 id="terminology">Terminology</h2>
+        <h3 id="website-vs-webapp">The difference between a website and a web application</h3>
+        <p>If the primary function of the site is to provide information in the shape of text and images, without any additional user interaction besides clicking on anchor tags and filling out input fields, then the site is a website and not a web application. Such a site should be fully capable of running in any kind of web browser, even a console based browser such as <a href="https://en.wikipedia.org/wiki/Lynx_(web_browser)">Lynx</a>.</p>
+        <p>Google Maps or a side-scolling shooting game on the other hand is a web application, they both require on-the-fly update of content and sophisticated user interaction.</p>
+
+        <h2 id="manifesto">Manifesto</h2>
+        <ol>
+            <li>
+                <h3>We NEVER follow hype and trends blindly</h3>
+                <p>The IT industry has turned into a fashion industry in which many companies and startups follow what is trending rather than what is most sane and pragmatic. If everyone else is doing it, it is automatically assumed that it must be right. It's just like <a href="https://en.wikipedia.org/wiki/The_Emperor's_New_Clothes">The Emperor's New Clothes</a></p>
+                <p>Much of the hype originates from <a href="https://en.wikipedia.org/wiki/Silicon_Valley">Silicon Valley</a> and it has more to do with sales and marketing than it has to do with good software engineering.</p>
+                <p>Rather than following hype and trends we analyze the problems that we're trying to solve and investigate which technical solutions are best suited to solve our problems. Not only from a pure business perspective, as in how fast can we get something up and running, but also in high regard for security, performance, environmental concerns and user experience and freedom.</p>
+            </li>
+            <li>
+                <h3>We NEVER make a website depend on JavaScript</h3>
+                <p>If we use any JavaScript for enhanced user interaction, we always make sure that we have validated that the functionality is actually truly enhancing the experience, and that the website still works 100% in a browser with JavaScript disabled.</p>
+            </li>
+            <li>
+                <h3>We STRIVE to use native JavaScript</h3>
+                <p>Bulky and bloated JavaScript frameworks and libraries are often to blame for the horrible and slow user experience most websites provide today.</p>
+                <p>We strive hard to only make use of native JavaScript or small and lean JavaScript libraries.</p>
+            </li>
+            <li>
+                <h3>We NEVER use programming languages that are not performance optimized and well suited for web development</h3>
+                <p>Programming languages such as <a href="https://go.dev/">Go</a> and <a href="https://www.php.net/">PHP</a> (despite its syntactic irregularities) are both performance optimized and well suited for web development.</p>
+                <p>When speed matters even more, C, C++ and Rust are other options.</p>
+            </li>
+            <li>
+                <h3>We NEVER use <a href="https://www.djangoproject.com/">Django</a> or <a href="https://rubyonrails.org/">Ruby on Rails</a></h3>
+                <p>As famous as these systems are for quickly making websites, just as slow are they in server performance. Python and Ruby are extremely ill suited for web development. The performance penalty is expensive and scaling is difficult.</p>
+            </li>
+            <li>
+                <h3>We NEVER use frameworks</h3>
+                <p>Web development in Go or PHP requires no framework as they both contain a web application framework in and of themselves. Putting a framework on top of yet another framework only adds unnecessary complexity.</p>
+                <p>The only exception to this rule is if the development is done in C, C++ or Rust as these programming languages don't provide a build-in web application framework. Yet, we still strive to avoid complex frameworks and prefer small and efficient libraries.</p>
+            </li>
+            <li>
+                <h3>We STRIVE to avoid object oriented programming</h3>
+                <p>When people use the object oriented paradigm they tend to focus much more on paradigm details and design patterns rather than solving programming problems. Classes become dependent on classes that depend on yet even more classes in order to adhere to so-called rules of correct object oriented design just to write "hello world" on the screen.</p>
+                <p>You can put your functions into classes for organization purposes, that's fine, but other than that the object oriented paradigm adds little of true value. We strive to avoid it.</p>
+            </li>
+            <li>
+                <h3>If we use PHP, we NEVER use the single entry point controller pattern</h3>
+                <p>The web server is the single entry point, it is the router by its very nature. We do not add yet another router on top of that only to rewrite every single request on the server before it gets served, that defeats the very architecture we're building on. Both rewrites and redirects has a performance cost.</p>
+            </li>
+            <li>
+                <h3>We NEVER use ORMs</h3>
+                <p>An ORM library is a library written in your programming language of choice that encapsulates the code needed to manipulate data in a database, so you don't use SQL anymore. Instead you interact directly with an object in the same programming language you're using.</p>
+                <p>ORMs add unnecessary complexity and result in a lower performance. We only talk to the database in the native language of the database, such as <a href="https://en.wikipedia.org/wiki/SQL">SQL</a>.</p>
+            </li>
+            <li>
+                <h3>We STRIVE hard to know and understand the software we use</h3>
+                <p>A <a href="https://en.wikipedia.org/wiki/Supply_chain_attack">supply chain attack</a> in software relies on our ignorance of the software we use or our inattentiveness to malicious changes. We must always strive to know and understand as much as possible about the code we use.</p>
+                <p>Any time we pull in code we haven't verified and understood, such as module dependencies or libraries, we're dealing with a possible supply chain attack.</p>
+            </li>
+            <li>
+                <h3>We ALWAYS follow the security guidelines from <a href="https://owasp.org/">OWASP</a></h3>
+                <p>The OWASP <a href="https://owasp.org/www-project-top-ten/">Top 10</a> is a standard awareness document for developers and web application security. It represents a broad consensus about the most critical security risks to web applications. The OWASP <a href="https://owasp.org/www-project-web-security-testing-guide/">Web Security Testing Guide (WSTG) Project</a> produces the premier cybersecurity testing resource for web application developers and security professionals.</p>
+            </li>
+        </ol>
+
+        <h2 id="contribute">How to Contribute</h2>
+        <p>Contribute on <a href="https://github.com/unixsheikh/webdevelopmentmanifesto.com">GitHub</a>.</p>
+        <ul>
+            <li>Clone and edit.</li>
+            <li>Submit a pull request for consideration.</li>
+        </ul>
+
+        <h2 id="license">License</h2>
+        <p>Web Development Manifesto is licensed under <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+    </body>
+</html>
